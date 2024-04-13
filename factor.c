@@ -10,7 +10,7 @@
 int main(int argc, char *argv[])
 {
     FILE *fptr;
-    size_t count = 0; // Initialize count to avoid potential issues
+    size_t count = 0;
     char *buffer = NULL;
 
     if (argc != 2)
@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
     {
         factorize(buffer);
     }
-    free(buffer); // Free dynamically allocated buffer
+    free(buffer);
     fclose(fptr);
     return 0;
 }
